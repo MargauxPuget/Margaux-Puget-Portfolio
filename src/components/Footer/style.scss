@@ -1,0 +1,13 @@
+@use 'src/styles/vars';
+
+.footer {
+  color: vars.$orange-color;
+  width:100%;
+  padding: 1rem;
+  
+  &_title{
+    margin: 0.2rem;
+    font-weight: 800;
+  }
+  
+}

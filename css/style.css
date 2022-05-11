@@ -1,0 +1,208 @@
+/* Mon style css */
+
+/*----------*/
+/*  GLOBAL  */
+/*----------*/
+#wrapper{
+    display: flex;
+    flex-direction: column; /*a changer pour d'autre largeur d'écran*/
+}
+
+html{
+    font-family: 'Redressed', cursive;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+/*----------*/
+/*  header  */
+/*----------*/
+header{
+    text-align: center;
+    background-color: #441151;
+    padding-bottom: 1.8em;
+    
+    /*position du header sticky (ne bouge jamais) avce obligation de lui donner un endroit ou se placer*/
+    position: sticky;
+    top: 0px;
+}
+
+.titlePage{
+    font-size: 1.9em;
+    padding: 0.5em;
+}
+
+/* Nav et sous nav */
+/*  */
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    font-size:1.3em;
+    padding: 0.2em;
+}
+/*  */
+/* .nav li{ */
+    /* background-color: #883677; */
+    /* padding: 0.2em; */
+    /* border-radius: 5px; */
+/* } */
+/*  */
+/* .sousNav{ */
+    /* font-size:0.7em; */
+    /* display: none; */
+/* } */
+/*  */
+/* .sousNav li a{ */
+    /* background-color: #441151; */
+/* } */
+/*  */
+/* li:hover ul { */
+    /* display: block; */
+/* } */
+
+/*----------*/
+/*   Menu   */
+/*----------*/
+
+#nav, #nav ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+#nav li{
+    display:inline-block;
+    position:relative;
+    border-radius:8px 8px 0 0;
+}
+#nav ul li{
+    display:inherit;
+    border-radius:0;
+}
+#nav ul li:hover{
+    border-radius:0;
+}
+#nav ul li:last-child{
+    border-radius:0 0 8px 8px;
+}
+#nav ul{
+    position:absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    transition: .8s all 0.3s;
+}
+#nav li:hover ul{
+    max-height:15em;
+}
+/* background des liens menus */
+#nav li{
+    background-color: #edd2e0;
+    background-image:linear-gradient(to bottom, #edd2e0 0%, #441151 100%);
+}
+
+/* background des liens sous menus */
+    #nav li li{
+    background:#883677;
+}
+/* background des liens menus et sous menus au survol */
+    #nav li:hover, #nav li li:hover{
+    background:#edd2e0;
+}
+
+/* les a href */
+#nav a{
+    text-decoration:none;
+    display:block;
+    padding:8px 20px;
+    color:#fff;
+}
+#nav ul a{
+    padding:8px 0;
+}
+#nav li:hover li a{
+    color:#fff;
+    text-transform:inherit;
+}
+#nav li:hover a, #nav li li:hover a{
+    color:#000;
+}
+
+
+/*----------*/
+/*   Main   */
+/*----------*/
+
+/*global*/
+main{
+    margin: 0% 5%;
+    text-align: center;
+}
+
+/*titre et span*/
+h2{
+    font-size: 1.7em;
+    padding: 0.5em;
+}
+
+
+.span--DONE{
+    background-color: rgba(229, 149, 0, 0.3);
+    padding: 2px;
+    border-radius: 5px;
+    margin: 2px;
+}
+.span--WIP{
+    background-color: rgba(136, 54, 119, 0.3);
+    padding: 2px;
+    border-radius: 5px;
+    margin: 2px;
+}
+.span--TODO{
+    background-color: rgba(156, 175, 183, 0.3);
+    padding: 2px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+
+/*cards*/
+.card{
+    display: flex;
+    flex-direction: row;
+
+    margin: 4% 1%;
+    padding: 4px;
+}
+
+.card img{
+    width: 50px;
+    margin: 2%;
+}
+
+.description{
+    text-align: left;
+    margin-left: 2px;
+}
+
+h3{
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
+.card--DONE{
+    background-color: rgba(229, 149, 0, 0.3);
+}
+.card--WIP{
+    background-color: rgba(136, 54, 119, 0.3);
+}
+.card--TODO{
+    background-color: rgba(156, 175, 183, 0.3);
+}

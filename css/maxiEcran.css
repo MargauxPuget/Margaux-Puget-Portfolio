@@ -1,0 +1,69 @@
+/*----------*/
+/*   Menu -> pour les écrans plus grands  */
+/*----------*/
+
+#nav, #nav ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+#nav li{
+    display:inline-block;
+    position:relative;
+    border-radius:8px 8px 0 0;
+}
+#nav ul li{
+    display:inherit;
+    border-radius:0;
+}
+#nav ul li:hover{
+    border-radius:0;
+}
+#nav ul li:last-child{
+    border-radius:0 0 8px 8px;
+}
+#nav ul{
+    position:absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    transition: .8s all 0.3s;
+}
+#nav li:hover ul{
+    max-height:15em;
+}
+/* background des liens menus */
+#nav li{
+    background-color: #edd2e0;
+    background-image:linear-gradient(to bottom, #edd2e0 0%, #441151 100%);
+}
+
+/* background des liens sous menus */
+    #nav li li{
+    background:#883677;
+}
+/* background des liens menus et sous menus au survol */
+    #nav li:hover, #nav li li:hover{
+    background:#edd2e0;
+}
+
+/* les a href */
+#nav a{
+    text-decoration:none;
+    display:block;
+    padding:8px 20px;
+    color:#fff;
+}
+#nav ul a{
+    padding:8px 0;
+}
+#nav li:hover li a{
+    color:#fff;
+    text-transform:inherit;
+}
+#nav li:hover a, #nav li li:hover a{
+    color:#000;
+}

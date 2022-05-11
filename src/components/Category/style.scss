@@ -1,0 +1,15 @@
+@use 'src/styles/vars';
+
+
+
+.category{
+  background-color: vars.$background-color;
+  transition: width 2s, transform 1s;
+
+  &:hover {
+    border-width: 2px;
+    transform: scale(1.2);
+    z-index:100;
+  }
+}
+

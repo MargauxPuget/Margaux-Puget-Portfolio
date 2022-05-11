@@ -1,0 +1,19 @@
+// ici on peut définir des variables scss qui seront utilisées partout dans notre code
+
+// on impoprte le module saas de gestion des couleurs
+@use 'sass:color';
+
+// Generic
+$orange-color: #e67700;
+// on peut utiliser des modules tout prets de saas par exemple pour generer des couleur à partir d'une couleur principale 
+$alternative-color: color.scale($orange-color, $lightness: 80%);
+$light-color: color.scale($orange-color, $lightness: 50%);
+$darker-color: color.scale($orange-color, $blackness: 50%);
+
+$background-color: #ced4da;
+$dark-color: #101010;
+$light-color: #fff;
+
+
+//progressionde la barre du header
+$progressBarDownload: 80%;

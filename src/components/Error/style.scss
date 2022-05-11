@@ -1,0 +1,7 @@
+@use 'src/styles/vars';
+
+.err404 {
+  color: vars.$dark-color;
+  width: 70%;
+  margin: 5rem auto ;
+}
