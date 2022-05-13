@@ -20,9 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main categories={categoriesList} />} />
         <Route path="/projets" element={<ProjetsList />} />
-        
         <Route path="*" element={<Error />} />
-
       </Routes>
       <Footer />
     </div>
