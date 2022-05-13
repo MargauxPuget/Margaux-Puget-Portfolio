@@ -53,6 +53,22 @@
     &_text{
       margin-bottom: 0.5rem;
     }
+
+    &_label{
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+
+      & span{
+      margin: 0.2rem;
+      padding: 0.3rem .7rem;
+
+      border-radius: 20px;
+      background-color: vars.$alternative-color;
+      }
+    }
   }
 }
 
