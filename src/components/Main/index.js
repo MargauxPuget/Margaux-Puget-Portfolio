@@ -17,6 +17,7 @@ function Main({ categories }) {
 Main.propTypes = {
   categories: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string.isRequired,
+    list: PropTypes.array.isRequired,
   })).isRequired,
 };
 

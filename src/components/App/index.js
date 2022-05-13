@@ -8,10 +8,9 @@ import categoriesList from 'src/data/categories';
 // Composants
 import Header from 'src/components/Header';
 import Main from 'src/components/Main';
+import ProjetsList from 'src/components/ProjetsList';
 import Footer from 'src/components/Footer';
 import Error from 'src/components/Error';
-
-console.log(categoriesList);
 
 // == Composant
 function App() {
@@ -20,6 +19,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main categories={categoriesList} />} />
+        <Route path="/projets" element={<ProjetsList />} />
+        
         <Route path="*" element={<Error />} />
 
       </Routes>

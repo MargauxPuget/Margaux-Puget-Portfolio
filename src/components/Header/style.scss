@@ -17,33 +17,22 @@
   &_progressbar--wrapper{
     background-color: #dfe6e9;
     border: 1px solid vars.$orange-color;
-    /* color: white; */
     border-radius: 30px;
     width: 50%;
     margin: 1rem auto;
-
-    /* width: 90%; */
     height: 50px;
-    position: relative;/* 
-    background: rgba(17, 17, 17, .3); */
-    // margin: 20px auto;
+    position: relative;
 
   }
 
   &_progressbar{
     background-color: vars.$orange-color;
-    // color: white;
     padding: 1rem;
-    // text-align: right;
-    // font-size: 20px;
     border-radius: 100px;
     width: vars.$progressBarDownload;
-
-    // width: 80%;
     animation: barProgress 10s;
     height: 48px;
     position: absolute;
-    // background-color: #ea8564;
   }
   
   
