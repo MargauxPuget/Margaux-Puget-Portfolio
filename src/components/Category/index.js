@@ -1,4 +1,4 @@
-import './style.scss';
+// import './style.scss';
 import PropTypes from 'prop-types';
 
 function Category({ title, list }) {

@@ -4,13 +4,13 @@
   color: vars.$orange-color;
 
   &_title{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 1rem;
     font-weight: 800;
   }
   
   &_soustitle{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 1rem;
   }
 
@@ -20,9 +20,8 @@
     border-radius: 30px;
     width: 50%;
     margin: 1rem auto;
-    height: 50px;
+    height: 34px;
     position: relative;
-
   }
 
   &_progressbar{
@@ -31,11 +30,9 @@
     border-radius: 100px;
     width: vars.$progressBarDownload;
     animation: barProgress 10s;
-    height: 48px;
+    height: 2rem;
     position: absolute;
   }
-  
-  
 }
 
 @keyframes barProgress {

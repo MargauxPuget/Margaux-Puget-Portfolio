@@ -1,13 +1,21 @@
 import './style.scss';
 import PropTypes from 'prop-types';
 import Category from 'src/components/Category';
+import { NavLink } from 'react-router-dom';
 
 function Main({ categories }) {
   return (
     <main className="main">
 
       {categories.map((category) => (
-        <Category {...category} key={category.title} />
+        <NavLink
+          // on ajoute la props to pour que Link sache quelle url utiliser
+          to={category.route}
+          className="main_link"
+          key={category.title}
+        >
+          <Category {...category} />
+        </NavLink>
       ))}
 
     </main>
