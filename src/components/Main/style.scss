@@ -3,7 +3,7 @@
 .main {
   color: vars.$orange-color;
   display: flex;
-  margin: 5rem 0;
+  margin: 5rem 2rem;
 
   @media (max-width: 600px) {
     flex-direction: column;
@@ -41,7 +41,6 @@
 
     @media (max-width: 600px) {
       width: 80%;
-      
     }
   }
 
