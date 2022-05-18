@@ -1,7 +1,11 @@
 // import './style.scss';
 import PropTypes from 'prop-types';
 
-function Projet({ title, explication, label }) {
+function Projet({
+  title,
+  explication,
+  label,
+}) {
   return (
     <div className="project_card">
       <img className="project_card_img" src="https://randomfox.ca/images/6.jpg" alt="apperçue du site" />

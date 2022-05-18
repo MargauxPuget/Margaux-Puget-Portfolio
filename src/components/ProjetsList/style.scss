@@ -16,9 +16,10 @@
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3);
   transition: 0.3s;
   width: 25vw;
-  height: 50vh;
+  height: 60vh;
   margin: 1rem ;
   text-align: center;
+  overflow: auto;
 
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
