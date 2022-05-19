@@ -1,13 +1,15 @@
 import './style.scss';
-import PropTypes from 'prop-types';
 import Category from 'src/components/Category';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
-function Main({ categories }) {
+function Main() {
+  const categoriesList = useSelector((state) => state.categoriesList);
+
   return (
     <main className="main">
 
-      {categories.map((category) => (
+      {categoriesList.map((category) => (
         <Link
           // on ajoute la props to pour que Link sache quelle url utiliser
           to={category.route}
@@ -21,13 +23,5 @@ function Main({ categories }) {
     </main>
   );
 }
-
-Main.propTypes = {
-  categories: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    list: PropTypes.array.isRequired,
-    route: PropTypes.string.isRequired,
-  })).isRequired,
-};
 
 export default Main;

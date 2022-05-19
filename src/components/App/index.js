@@ -3,8 +3,8 @@ import './styles.scss';
 import { Routes, Route } from 'react-router-dom';
 
 // Data
-import categoriesList from 'src/data/categories';
-import projectsList from 'src/data/projects';
+// import categoriesList from 'src/data/categories';
+// import projectsList from 'src/data/projects';
 
 // Composants
 import Header from 'src/components/Header';
@@ -19,8 +19,8 @@ function App() {
     <div className="app">
       <Header />
       <Routes>
-        <Route path="/" element={<Main categories={categoriesList} />} />
-        <Route path="/projets" element={<ProjetsList projetsList={projectsList} />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/projets" element={<ProjetsList />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
