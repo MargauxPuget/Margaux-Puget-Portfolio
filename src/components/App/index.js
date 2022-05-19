@@ -1,5 +1,5 @@
 // == Import
-import './styles.css';
+import './styles.scss';
 import { Routes, Route } from 'react-router-dom';
 
 // Data

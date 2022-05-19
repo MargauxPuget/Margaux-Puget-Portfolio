@@ -5,6 +5,14 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <header className="header">
+      <aside className="aside aside--left">
+        <h4>Projets</h4>
+        <h5>Passés</h5>
+      </aside>
+      <aside className="aside aside--right">
+        <h4>Projets</h4>
+        <h5>Future</h5>
+      </aside>
       <Link to="/">
         <h1 className="header_title">Margaux Puget</h1>
       </Link>

@@ -2,10 +2,8 @@
 
 .header {
   color: vars.$orange-color;
-  // background-image: url("src/assets/images/gdFleur.excalidraw.svg");
-  // background-size: 200px;
-  // background-repeat: no-repeat;
-  // background-position: -5% -80px;
+
+  position: relative;
 
   &_title{
     font-size: 2.5rem;
@@ -45,4 +43,33 @@
 }
 to {
   width: vars.$progressBarDownload}
+}
+
+.aside{
+  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  color: black;
+  padding: 1rem;
+  border-radius: 50%;
+
+  &--left{
+    border: 1px solid vars.$pastProject-background-color;
+    background-color: (rgba(vars.$pastProject-background-color, 0.4));
+    color: vars.$pastProject-color;
+    left: 8%;
+    transform: rotate(-30deg);
+    width: 8rem;
+    height: 4rem;
+  }
+
+  &--right{
+    border: 1px solid vars.$futureProject-background-color;
+    background-color: (rgba(vars.$futureProject-background-color, 0.4));
+    color: vars.$futureProject-color;
+    right: 8%;
+    transform: rotate(30deg);
+    width: 8rem;
+    height: 4rem;
+  }
 }
