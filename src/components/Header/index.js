@@ -4,25 +4,6 @@ import { Link, Routes, Route } from 'react-router-dom';
 function Header() {
   return (
     <header className="header">
-      <Routes>
-        <Route
-          path="/projets"
-          element={
-            (
-              <>
-                <aside className="aside aside--left">
-                  <h4>Projets</h4>
-                  <h5>Passés</h5>
-                </aside>
-                <aside className="aside aside--right">
-                  <h4>Projets</h4>
-                  <h5>Future</h5>
-                </aside>
-              </>
-            )
-        }
-        />
-      </Routes>
 
       <Link to="/">
         <h1 className="header_title">Margaux Puget</h1>
@@ -31,6 +12,27 @@ function Header() {
       <div className="header_progressbar--wrapper">
         <div className="header_progressbar" />
       </div>
+
+      <Routes>
+        <Route
+          path="/projets"
+          element={
+            (
+              <div className="asideList">
+                <aside className="aside aside--pass">
+                  <h4>Projets Passés</h4>
+                </aside>
+                <aside className="aside aside--now">
+                  <h4>Projets En cours</h4>
+                </aside>
+                <aside className="aside aside--futur">
+                  <h4>Projets Future</h4>
+                </aside>
+              </div>
+            )
+        }
+        />
+      </Routes>
     </header>
   );
 }
