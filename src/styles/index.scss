@@ -7,11 +7,21 @@ body {
   height: 100%;
   font-weight: 500;
 
-  background-image: url("src/assets/images/gdFleur.excalidraw.svg"),
-                    url("src/assets/images/triple-gdFleur.excalidraw.svg");
-  background-size: 200px, 300px;
-  background-repeat: no-repeat;
-  background-position:  -5% -80px, 113% -28%;
+  @media (min-width: 400px) {
+    background-image: vars.$background-image-left;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position:  -1% -1%;
+    
+  }
+
+  @media (min-width: 700px) {
+    background-image: vars.$background-image-left,
+                      vars.$background-image-right;
+    background-size: 200px, 300px;
+    background-repeat: no-repeat;
+    background-position:  -1% -1%, 102% -1%;
+  }
 }
 
 strong{
