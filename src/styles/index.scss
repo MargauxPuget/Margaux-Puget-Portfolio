@@ -7,7 +7,7 @@ body {
   height: 100%;
   font-weight: 500;
 
-  @media (min-width: 400px) {
+  @media (min-width: 500px) {
     background-image: vars.$background-image-left;
     background-size: 200px;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body {
                       vars.$background-image-right;
     background-size: 200px, 300px;
     background-repeat: no-repeat;
-    background-position:  -1% -1%, 102% -1%;
+    background-position:  -1% -1%, 102% -3%;
   }
 }
 

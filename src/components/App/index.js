@@ -9,6 +9,7 @@ import { Routes, Route } from 'react-router-dom';
 // Composants
 import Header from 'src/components/Header';
 import Main from 'src/components/Main';
+import Formations from 'src/components/Formations';
 import ProjetsList from 'src/components/ProjetsList';
 import Footer from 'src/components/Footer';
 import Error from 'src/components/Error';
@@ -19,7 +20,8 @@ function App() {
     <div className="app">
       <Header />
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Main />} />Formations
+        <Route path="/formations" element={<Formations />} />
         <Route path="/projets" element={<ProjetsList />} />
         <Route path="*" element={<Error />} />
       </Routes>

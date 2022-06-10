@@ -1,6 +1,8 @@
 // import './style.scss';
 import PropTypes from 'prop-types';
 
+// TODO import de images
+
 function Projet({
   title,
   explication,
